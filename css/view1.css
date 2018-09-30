@@ -1,0 +1,49 @@
+body {
+    padding-top: 60px;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+.content {
+    margin: 20px 10px;
+    height: 100%;
+}
+
+.content__title {
+    color: #173566;
+}
+
+.content__box {
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+
+.content__box__list {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.content__box__info {
+    border: 1px solid gray;
+    background-color: white;
+    padding: 25px 5px;
+}
+
+.content__box__info__first-row {
+    margin-bottom: 10px;
+}
+
+.content__filters {
+    margin: 20px 2px;
+}
+
+.content__pagination {
+    border: 1px solid gray;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+}

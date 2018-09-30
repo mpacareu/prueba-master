@@ -1,0 +1,24 @@
+{
+  "name": "prueba-master",
+  "description": "Prueba master :)",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mpacareu/prueba-master",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0"
+  },
+  "authors": [
+    "marian <mcapote250390@gmail.com>"
+  ],
+  "main": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./bower_components",
+    "test",
+    "tests"
+  ]
+}

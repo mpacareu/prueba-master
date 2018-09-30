@@ -1,0 +1,29 @@
+{
+    "name": "prueba-master",
+    "version": "1.0.0",
+    "description": "Prueba Ingreso Front-End Designer",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prestart": "npm install",
+        "start": "http-server -a localhost -p 8000 -c-1 ./"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mpacareu/prueba-master.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mpacareu/prueba-master/issues"
+    },
+    "homepage": "https://github.com/mpacareu/prueba-master#readme",
+    "devDependencies": {
+        "http-server": "^0.11.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.3.1",
+        "bootstrap": "^3.3.7",
+        "bootstrap-4-migrate": "^1.0.1"
+    }
+}

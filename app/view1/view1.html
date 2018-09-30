@@ -1,0 +1,201 @@
+<div class="container-fluid content">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #002157;">
+        <a class="navbar-brand mr-auto" href="#">
+            <img src="/img/logo-BCH.png" width="230" height="50" class="align-left float-left" alt="">
+        </a>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item ">
+                <a class="nav-link" style="color:white" href="#">Enlace 1</a>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link" style="color:white; align-content: center" href="#">|</span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#">Enlace 2</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Tittle -->
+    <h1 class="content__title">
+        T&iacute;tulo
+    </h1>
+    <!-- Card -->
+
+    <div class="card bg-light">
+        <h2 class="card-header">T&iacute;tulo caja</h2>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>
+                        Lorem Ipsum
+                    </h3>
+                    <ul class="content__box__list">
+                        <li>-Dolor sit Amet, consectetur adipiscing elit</li>
+                        <li>-Dolor sit Amet, consectetur adipiscing elit</li>
+                        <li>-Dolor sit Amet, consectetur adipiscing elit</li>
+                        <li>-Dolor sit Amet, consectetur adipiscing elit</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="content__box__info">
+                        <div class="row content__box__info__first-row">
+                            <div class="col-8">
+                                <span>
+                                    <li>
+                                        Dolor sit amet, consectetur adipiscing elit. Duis non tincidunt nulla. Morbit at sapien viverra
+                                        porttitor eros a
+                                    </li>
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                -$ 200.000.000.000.000.000
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>
+                                    <li>
+                                        Dolor sit amet, consectetur adipiscing elit
+                                    </li>
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                -$ 200.000.000.000.000.000
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Filters -->
+
+    <div class="content__filters bg-light row">
+        <span class="col-6"> Total Items: {{response.total}}</span>
+
+        <div class="col-6">
+            <button type="button" class="btn btn-outline-dark float-right" ng-hide="filtersIsOpen" ng-click="filtersIsOpen = !filtersIsOpen">Abrir</button>
+            <button type="button" class="btn btn-outline-dark float-right" ng-show="filtersIsOpen" ng-click="filtersIsOpen = !filtersIsOpen">Cerrar</button>
+        </div>
+    </div>
+    <div ng-show="filtersIsOpen">
+
+        <form class="content">
+            <div class="row">
+
+                <div class="col-3 form-group">
+                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control">
+                </div>
+                <div class="col-3 form-group">
+                    <input type="date" name="bday" min="1000-01-01" max="3000-12-31" class="form-control">
+                </div>
+                <!-- <div class='col-3'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker6'>
+                            <input type='text' class="form-control" placeholder="Seleccione..." />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-3'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker7'>
+                            <input type='text' class="form-control" placeholder="Seleccione..." />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $(function() {
+                            $('#datetimepicker6').datetimepicker();
+                            $('#datetimepicker7').datetimepicker({
+                                useCurrent: false //Important! See issue #1075
+                            });
+                            $("#datetimepicker6").on("dp.change", function(e) {
+                                $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+                            });
+                            $("#datetimepicker7").on("dp.change", function(e) {
+                                $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+                            });
+                        });
+                    });
+                </script> -->
+
+
+                <div class='col-3'>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="" disabled selected>Seleccione...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-6 mr-auto">
+                    <input type="text" class="form-control" placeholder="Búsqueda General...">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-success mb-2 float-right">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Lorem</th>
+                <th scope="col">Ipsum</th>
+                <th scope="col">Dolor</th>
+                <th scope="col">Sit</th>
+                <th scope="col">Amet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in currentPage">
+                <th>
+                    <input type="checkbox">
+                </th>
+                <th>{{item.lorem}}</th>
+                <th>{{item.ipsum}}</th>
+                <th>{{item.dolor}}</th>
+                <th>{{item.sit}}</th>
+                <th>{{item.amet}}</th>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li ng-class="{'page-item': true, 'active': (infoPage.state)}" ng-repeat="infoPage in infoPages"><a class="page-link" href ng-click="cleanSelected(); infoPage.state = true; loadCurrentPage(infoPage.skip, infoPage.top)">{{infoPage.page}}</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
